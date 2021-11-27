@@ -32,7 +32,10 @@ function StartGame() {
     }
 
     guessParagraph.innerHTML = `${bottomLineArray.join(" ")}`;
+
+
 }
+
 
 function mySupposition(e) {
     var myLetter = e.key.toLowerCase();
@@ -44,6 +47,7 @@ function mySupposition(e) {
                 bottomLineLetter.push(myLetter)
             }
         }
+
     } else {
         wrongGuesses.push(myLetter);
         guessCounter--;
@@ -95,6 +99,6 @@ function mySupposition(e) {
     console.log(bottomLineLetter)
 }
 
-StartGame();
+StartGame()
 
 window.onkeydown = mySupposition;
