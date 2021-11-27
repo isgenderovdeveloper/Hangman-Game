@@ -44,7 +44,8 @@ function mySupposition(e) {
         for (var i = 0; i < bottomLineArray.length; i++) {
             if (selectedLettersInWord[i] === myLetter) {
                 bottomLineArray[i] = myLetter;
-                bottomLineLetter.push(myLetter)
+                bottomLineLetter.push(myLetter);
+
             }
         }
 
@@ -64,6 +65,7 @@ function mySupposition(e) {
         winCounter++;
         for (var i = 0; i < bottomLine; i++) {
             bottomLineArray.push("_");
+
         }
         wrongGuessParagraph.innerHTML = `<strong>Wrong Guesses</strong>:${wrongGuesses}`;
         winParagraph.innerHTML = `<strong>Wins</strong>: ${winCounter}`;
